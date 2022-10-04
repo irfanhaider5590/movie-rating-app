@@ -1,12 +1,14 @@
 package io.javabrains.movieinfoservice.models;
 
 public class Movie {
-    String movieId;
-    String movieName;
+    private String movieId;
+    private String name;
+    private String description;
 
-    public Movie(String movieId, String movieName) {
+    public Movie(String movieId, String name, String description) {
         this.movieId = movieId;
-        this.movieName = movieName;
+        this.name = name;
+        this.description = description;
     }
 
     public String getMovieId() {
@@ -17,11 +19,19 @@ public class Movie {
         this.movieId = movieId;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public String getName() {
+        return name;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
